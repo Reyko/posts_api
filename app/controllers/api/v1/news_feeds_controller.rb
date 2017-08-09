@@ -1,5 +1,5 @@
-class Api::V1::NewsFeedsController < ApplicationController
+class Api::V1::NewsFeedsController < Api::V1::BaseController
   def show
-    render json: Post.recent
+    render json: posts
   end
 end
